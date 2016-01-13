@@ -16,8 +16,6 @@ RUN pip install cryptography riak
 ADD dcos_install.sh /
 RUN chmod +x /dcos_install.sh
 RUN /dcos_install.sh
-RUN mkdir -p ~/.dcos
-ADD dcos.toml ~/.dcos
 
 COPY profile /root/.profile
 
